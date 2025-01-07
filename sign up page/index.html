@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-4605c815f1874757bc9ac33aa114fb0f.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-2 col-lg-1 d-flex justify-content-center">
+                    <a href="../home page/index.html">
+                        <img src="./logo.png" id="logo" alt="logo">
+                    </a>
+                </div>
+                <div class="col-12 col-md-10 col-lg-4 gy-sm-3 gy-md-0 me-lg-5">
+                    <div id="category">
+                        <div>
+                            <a href="">MEN</a>
+                        </div>
+                        <div>
+                            <a href="">WOMEN</a>
+                        </div>
+                        <div>
+                            <a href="">KIDS</a>
+                        </div>
+                        <div>
+                            <a href="">HOME LIVING</a>
+                        </div>
+                        <div>
+                            <a href="">STUDIO <sup>NEW</sup></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 col-lg-4 p-0 ms-lg-5">
+                    <div class="rounded" id="search">
+                        <button disabled=""><i class="fa-solid fa-magnifying-glass" style="color: #b3b3b3;"></i></button>
+                        <input type="text" placeholder="Search for products, brand and more">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div id="actions">
+                        <div>
+                            <a href="">
+                                <i class="fa-thin fa-heart"></i>
+                                <p>Wishlist</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <i class="fa-sharp fa-light fa-bag-shopping"></i>
+                                <p>Bag</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div id="mainbox">
+            <div id="img">
+
+            </div>
+            <div>
+                <form action="" id="sign-in">
+                    <h2 class="mb-4">Sign up</h2>
+                    <input type="text" class="form-control my-2" id="uname" placeholder="Username">
+                    <p id="uname-err">Username lenght should be 3-10</p>
+                    <input type="text" class="form-control my-2" id="mail" placeholder="Email">
+                    <p id="mail-err">Enter Valid Email</p>
+                    <input type="password" class="form-control my-2" id="pass" placeholder="Password">
+                    <p id="pass-err">Password must contain atleast one <b>lowercase and uppercase letter</b>, one <b>digit</b>, one <b>special character</b>, atleast <b>8 characters</b> long</p>
+                    <p>By continuing, I agree to <a href="https://www.myntra.com/termsofuse">Terms of use</a> & <a
+                            href="https://www.myntra.com/privacypolicy">Privacy policy</a></p>
+                    <input type="submit" class="btn my-3" id="submit" vlaue="CONTINUE">
+                    <p>Not registered yet? <a href="../login page/index.html">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+</html>
