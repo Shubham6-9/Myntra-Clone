@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-4605c815f1874757bc9ac33aa114fb0f.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-2 col-lg-1 d-flex justify-content-center">
+                    <a href="../home page/index.html">
+                        <img src="./logo.png" id="logo" alt="logo">
+                    </a>
+                </div>
+                <div class="col-12 col-md-10 col-lg-4 gy-sm-3 gy-md-0 me-lg-5">
+                    <div id="category">
+                        <div>
+                            <a href="">MEN</a>
+                        </div>
+                        <div>
+                            <a href="">WOMEN</a>
+                        </div>
+                        <div>
+                            <a href="">KIDS</a>
+                        </div>
+                        <div>
+                            <a href="">HOME LIVING</a>
+                        </div>
+                        <div>
+                            <a href="">STUDIO <sup>NEW</sup></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 col-lg-4 p-0 ms-lg-5">
+                    <div class="rounded" id="search">
+                        <button disabled><i class="fa-solid fa-magnifying-glass" style="color: #b3b3b3;"></i></button>
+                        <input type="text" placeholder="Search for products, brand and more">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div id="actions">
+                        <div>
+                            <a href="">
+                                <i class="fa-thin fa-heart"></i>
+                                <p>Wishlist</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <i class="fa-sharp fa-light fa-bag-shopping"></i>
+                                <p>Bag</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid d-md-flex justify-content-between">
+        <div id="offcanvas">
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                Filters &nbsp; <i class="fa-sharp fa-regular fa-bars"></i>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div id="filters">
+                        <h4>Filters</h4>
+                        <input type="radio" name="filters"> <p class="fw-semibold d-inline">Men</p> <br>
+                        <input type="radio" name="filters"> <p class="fw-semibold d-inline">Women</p> <br>
+                        <input type="radio" name="filters"> <p class="fw-semibold d-inline">Boys</p> <br>
+                        <input type="radio" name="filters"> <p class="fw-semibold d-inline">Girls</p> <br>
+                        <hr>
+                        <h5>Categories</h5>
+                        <input type="checkbox" name="categories"> <p class="d-inline">TShirts <span>(1652)</span></p> <br>
+                        <input type="checkbox" name="categories"> <p class="d-inline">Casual Shoes <span>(819)</span></p> <br>
+                        <input type="checkbox" name="categories"> <p class="d-inline">Sport Shoes <span>(620)</span></p> <br>
+                        <input type="checkbox" name="categories"> <p class="d-inline">Shorts <span>(435)</span></p> <br>
+                        <input type="checkbox" name="categories"> <p class="d-inline">Track Pants <span>(415)</span></p> <br>
+                        <input type="checkbox" name="categories"> <p class="d-inline">Sweaters <span>(258)</span></p> <br>
+                        <hr>
+                        <h5>Brands</h5>
+                        <input type="checkbox" name="brands"> <p class="d-inline">ArtzFolio <span>(79688)</span></p> <br>
+                        <input type="checkbox" name="brands"> <p class="d-inline">Kuber Industries <span>(28494)</span></p> <br>
+                        <input type="checkbox" name="brands"> <p class="d-inline">Roadster <span>(22136)</span></p> <br>
+                        <input type="checkbox" name="brands"> <p class="d-inline">Afast <span>(16596)</span></p> <br>
+                        <input type="checkbox" name="brands"> <p class="d-inline">CVANU <span>(11757)</span></p> <br>
+                        <input type="checkbox" name="brands"> <p class="d-inline">1ST TIME <span>(10565)</span></p> <br>
+                        <input type="checkbox" name="brands"> <p class="d-inline">HIGHLANDER <span>(10277)</span></p>
+                        <hr>
+                        <h5>Price</h5>
+                        <input type="range" class="form-range d-inline">
+                        <p>200 - 10,000+</p>
+                        <hr>
+                        <h5>Colors</h5>
+                        <input type="checkbox" name="colors"> <div class="color1 d-inline-block"></div> <p class="d-inline">Black</p> <br>
+                        <input type="checkbox" name="colors"> <div class="color2 d-inline-block"></div> <p class="d-inline">Navy Blue</p> <br>
+                        <input type="checkbox" name="colors"> <div class="color3 d-inline-block"></div> <p class="d-inline">Yellow</p> <br>
+                        <input type="checkbox" name="colors"> <div class="color4 d-inline-block"></div> <p class="d-inline">White</p> <br>
+                        <input type="checkbox" name="colors"> <div class="color5 d-inline-block"></div> <p class="d-inline">Green</p> <br>
+                        <input type="checkbox" name="colors"> <div class="color6 d-inline-block"></div> <p class="d-inline">Blue</p> <br>
+                        <hr>
+                        <h5>Discount Range</h5>
+                        <input type="radio" name="discount"> <p class="d-inline">10% and Above</p> <br>
+                        <input type="radio" name="discount"> <p class="d-inline">20% and Above</p> <br>
+                        <input type="radio" name="discount"> <p class="d-inline">30% and Above</p> <br>
+                        <input type="radio" name="discount"> <p class="d-inline">40% and Above</p> <br>
+                        <input type="radio" name="discount"> <p class="d-inline">50% and Above</p> <br>
+                        <input type="radio" name="discount"> <p class="d-inline">60% and Above</p> <br>
+                        <input type="radio" name="discount"> <p class="d-inline">70% and Above</p> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filters">
+            <h4>Filters</h4>
+            <input type="radio" name="filters"> <p class="fw-semibold d-inline">Men</p> <br>
+            <input type="radio" name="filters"> <p class="fw-semibold d-inline">Women</p> <br>
+            <input type="radio" name="filters"> <p class="fw-semibold d-inline">Boys</p> <br>
+            <input type="radio" name="filters"> <p class="fw-semibold d-inline">Girls</p> <br>
+            <hr>
+            <h5>Categories</h5>
+            <input type="checkbox" name="categories"> <p class="d-inline">TShirts <span>(1652)</span></p> <br>
+            <input type="checkbox" name="categories"> <p class="d-inline">Casual Shoes <span>(819)</span></p> <br>
+            <input type="checkbox" name="categories"> <p class="d-inline">Sport Shoes <span>(620)</span></p> <br>
+            <input type="checkbox" name="categories"> <p class="d-inline">Shorts <span>(435)</span></p> <br>
+            <input type="checkbox" name="categories"> <p class="d-inline">Track Pants <span>(415)</span></p> <br>
+            <input type="checkbox" name="categories"> <p class="d-inline">Sweaters <span>(258)</span></p> <br>
+            <hr>
+            <h5>Brands</h5>
+            <input type="checkbox" name="brands"> <p class="d-inline">ArtzFolio <span>(79688)</span></p> <br>
+            <input type="checkbox" name="brands"> <p class="d-inline">Kuber Industries <span>(28494)</span></p> <br>
+            <input type="checkbox" name="brands"> <p class="d-inline">Roadster <span>(22136)</span></p> <br>
+            <input type="checkbox" name="brands"> <p class="d-inline">Afast <span>(16596)</span></p> <br>
+            <input type="checkbox" name="brands"> <p class="d-inline">CVANU <span>(11757)</span></p> <br>
+            <input type="checkbox" name="brands"> <p class="d-inline">1ST TIME <span>(10565)</span></p> <br>
+            <input type="checkbox" name="brands"> <p class="d-inline">HIGHLANDER <span>(10277)</span></p>
+            <hr>
+            <h5>Price</h5>
+            <input type="range" class="form-range d-inline">
+            <p>200 - 10,000+</p>
+            <hr>
+            <h5>Colors</h5>
+            <input type="checkbox" name="colors"> <div class="color1 d-inline-block"></div> <p class="d-inline">Black</p> <br>
+            <input type="checkbox" name="colors"> <div class="color2 d-inline-block"></div> <p class="d-inline">Navy Blue</p> <br>
+            <input type="checkbox" name="colors"> <div class="color3 d-inline-block"></div> <p class="d-inline">Yellow</p> <br>
+            <input type="checkbox" name="colors"> <div class="color4 d-inline-block"></div> <p class="d-inline">White</p> <br>
+            <input type="checkbox" name="colors"> <div class="color5 d-inline-block"></div> <p class="d-inline">Green</p> <br>
+            <input type="checkbox" name="colors"> <div class="color6 d-inline-block"></div> <p class="d-inline">Blue</p> <br>
+            <hr>
+            <h5>Discount Range</h5>
+            <input type="radio" name="discount"> <p class="d-inline">10% and Above</p> <br>
+            <input type="radio" name="discount"> <p class="d-inline">20% and Above</p> <br>
+            <input type="radio" name="discount"> <p class="d-inline">30% and Above</p> <br>
+            <input type="radio" name="discount"> <p class="d-inline">40% and Above</p> <br>
+            <input type="radio" name="discount"> <p class="d-inline">50% and Above</p> <br>
+            <input type="radio" name="discount"> <p class="d-inline">60% and Above</p> <br>
+            <input type="radio" name="discount"> <p class="d-inline">70% and Above</p> <br>
+        </div>
+        <div id="products" class="row">
+            
+        </div>
+    </div>
+    <footer class="container">
+        
+    </footer>
+</body>
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+</html>

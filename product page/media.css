@@ -1,0 +1,62 @@
+/* for NAVBAR */
+/* SMALL MOBILE */
+@media(max-width: 321px){
+    #category{
+        font-size: 10px;
+        justify-content: space-between;
+    }
+    #logo{
+        height: 45px;
+    }
+    #filters{
+        width: 100%;
+    }
+    .filters{
+        display: none;
+    }
+    #products{
+        width: 100%;
+        margin: 25px 0px 0px 1%;
+    }
+}
+/* MED AND LARGE MOBILE */
+@media(min-width: 321px) and (max-width: 426px){
+    #category{
+        font-size: 12px;
+        justify-content: space-between;
+    }
+    #logo{
+        height: 45px;
+    }
+    #filters{
+        width: 100%;
+    }
+    .filters{
+        display: none;
+    }
+    #pro-img{
+        width: 80%;
+    }
+    #products{
+        width: 100%;
+        margin: 25px 0px 0px 1%;
+    }
+}
+/* TABLET AND ABOVE */
+@media (min-width: 426px){
+    #offcanvas{
+        display: none;
+    }
+}
+/* SMALL LAPTOP */
+@media (min-width: 769px) and (max-width: 1024px){
+    #category{
+        font-size: 13px;
+    }
+}
+/* LARGE LAPTOP AND ABOVE */
+@media(min-width: 1025px){
+    #pro-img{
+        width: 80%;
+    }
+}

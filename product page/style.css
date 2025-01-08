@@ -2,14 +2,11 @@
     --pink: #ff3f6c;
 }
 
-body {
-    background: #FDEEEB;
-}
-
 /* NAVBAR */
 body>div:first-child {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 10;
     position: sticky;
     top: 0;
 }
@@ -93,47 +90,79 @@ a {
     height: 50px;
     text-align: center;
 }
-
-/* LOGIN BOX */
-#mainbox {
-    height: 800px;
-    width: 25%;
-    margin: auto;
-    margin-top: 50px;
+#offcanvas{
+    position: fixed;
+    z-index: 20;
 }
-
-#img {
-    height: 18.6%;
-    width: 100%;
-    background-image: url("https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/1/25/f5e9a029-33c3-4a92-811b-ef7917fe6d441674670210687-offer-banner-300-600x240-code-_-MYNTRA300.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#mainbox>div:last-child {
-    height: 80%;
-    background: white;
+#filters , .filters{
+    margin-top: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 20%;
     padding: 20px;
+    height: 800px;
+    overflow: scroll;
 }
-form p{
+.filters::-webkit-scrollbar{
+    display: none;
+}
+span {
     font-size: 13px;
+    color: rgb(163, 162, 162);
 }
-form a{
-    font-weight: 700;
-    color: var(--pink);
+
+.color1,
+.color2,
+.color3,
+.color4,
+.color5,
+.color6 {
+    height: 15px;
+    width: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
 }
-form input[type="submit"]{
+
+.color1 {
+    background-color: black;
+}
+
+.color2 {
+    background-color: navy;
+}
+
+.color3 {
+    background-color: yellow;
+}
+
+.color4 {
+    background-color: white;
+}
+
+.color5 {
+    background-color: green;
+}
+
+.color6 {
+    background-color: blue;
+}
+#products{
+    width: 80%;
+    margin-right: -4px;
+    height: 1000px;
+    overflow: scroll;
+}
+#products::-webkit-scrollbar{
+    display: none;
+}
+#pro-img{
+    height: 380px;
     width: 100%;
-    background-color: var(--pink);
-    color: white;
+    padding: 15px;
 }
-form input[type="submit"]:hover{
-    border: 1px solid;
-    color: var(--pink);
-}
-#uname-err, #mail-err, #pass-err{
-    margin-left: 10px;
-    font-size: 12px;
-    color: var(--pink);
-    display: none;  
-}
+/* body>div:nth-child(2){
+    height: 1200px;
+    overflow: scroll;
+} */
+/* body>div:nth-child(2)::-webkit-scrollbar{
+    display: none;
+} */

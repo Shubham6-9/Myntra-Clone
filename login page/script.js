@@ -23,6 +23,7 @@ document.querySelector("form").addEventListener('submit', (e) => {
         }
     }
 })
+localStorage.setItem("loginSuccess", false)
 function checkData(res) {
     let a = 0
     res.forEach((e) => {
@@ -30,7 +31,8 @@ function checkData(res) {
             a = 0
             if (pass.value == e.pass) {
                 document.getElementById("pass-wrong").style.display="none";
-                alert("login successfull")
+                localStorage.setItem("loginSuccess", true)
+                window.location.href="../product page/index.html";
             } else {
                 document.getElementById("pass-wrong").style.display="block";
             }
