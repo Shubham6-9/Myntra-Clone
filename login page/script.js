@@ -32,7 +32,7 @@ function checkData(res) {
             if (pass.value == e.pass) {
                 document.getElementById("pass-wrong").style.display="none";
                 localStorage.setItem("loginSuccess", true)
-                window.location.href="../product page/index.html";
+                window.location.href=`../home page/index.html?id=${e.id}`;
             } else {
                 document.getElementById("pass-wrong").style.display="block";
             }

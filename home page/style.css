@@ -74,7 +74,7 @@ a {
 
 #search>input {
     width: 89%;
-    outline:  none;
+    outline: none;
 }
 
 #search>button {
@@ -94,7 +94,8 @@ a {
     text-align: center;
 }
 
-#profile-login-page {
+#profile-login-page,
+#profile-login-true {
     height: 400px;
     width: 260px;
     background-color: white;
@@ -107,20 +108,18 @@ a {
     display: none;
 }
 
-#profile-login:hover {
-    #profile-login-page {
-        display: block;
-    }
-}
-
 #login,
-#signup {
+#signup,
+#logout,
+#product {
     border: 1px solid rgb(235, 235, 235);
     transition: 0.3s ease;
 }
 
 #login:hover,
-#signup:hover {
+#signup:hover,
+#logout:hover,
+#product:hover {
     border: 1px solid var(--pink);
     color: var(--pink);
 }
