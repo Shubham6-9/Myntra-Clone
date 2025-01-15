@@ -29,11 +29,11 @@ const id = (new URLSearchParams(window.location.search)).get("id")
 fetch(`http://localhost:3000/users?id=${id}`)
     .then((res) => res.json())
     .then((res) => {
-        console.log(res[0].uname)
         document.getElementById("username").innerText = `${res[0].uname}`
     })
 
 document.getElementById("logout").addEventListener('click', () => {
     localStorage.setItem("loginSuccess", false)
+    localStorage.setItem("User", "")
     window.location.reload()
 })

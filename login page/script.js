@@ -24,22 +24,28 @@ document.querySelector("form").addEventListener('submit', (e) => {
     }
 })
 localStorage.setItem("loginSuccess", false)
+localStorage.setItem("User", "")
 function checkData(res) {
     let a = 0
-    res.forEach((e) => {
-        if (mail.value == e.mail) {
-            a = 0
-            if (pass.value == e.pass) {
-                document.getElementById("pass-wrong").style.display="none";
-                localStorage.setItem("loginSuccess", true)
-                window.location.href=`../home page/index.html?id=${e.id}`;
+    if (!res) {
+        a = 1;
+    } else {
+        res.forEach((e) => {
+            if (mail.value == e.mail) {
+                a = 0
+                if (pass.value == e.pass) {
+                    document.getElementById("pass-wrong").style.display = "none";
+                    localStorage.setItem("loginSuccess", true)
+                    localStorage.setItem("User", e.id)
+                    window.location.href = `../home page/index.html?id=${e.id}`;
+                } else {
+                    document.getElementById("pass-wrong").style.display = "block";
+                }
             } else {
-                document.getElementById("pass-wrong").style.display="block";
+                a = 1
             }
-        } else {
-            a = 1
-        }
-    })
+        })
+    }
     if (a == 1)
         document.getElementById("not-reg").style.display = "block";
     else

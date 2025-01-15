@@ -1,48 +1,53 @@
 /* for NAVBAR */
 /* SMALL MOBILE */
-@media(max-width: 321px){
-    #category{
+@media(max-width: 321px) {
+    #category {
         font-size: 10px;
         justify-content: space-between;
     }
-    #logo{
+
+    #logo {
         height: 45px;
     }
-    #mainbox{
+    body>div:nth-child(2) {
+        display: block;
+    }
+    #img, #details {
         width: 100%;
     }
-    #img{
-        height: 15%;
-    }
 }
+
 /* MED AND LARGE MOBILE */
-@media(min-width: 321px) and (max-width: 426px){
-    #category{
+@media(min-width: 321px) and (max-width: 426px) {
+    #category {
         font-size: 12px;
         justify-content: space-between;
     }
-    #logo{
+
+    #logo {
         height: 45px;
     }
+    body>div:nth-child(2) {
+        display: block;
+    }
+    #img, #details {
+        width: 100%;
+    }
 }
+
 /* TABLET */
-@media(min-width: 426px) and (max-width: 769px){
-    #mainbox{
-        width: 53.5%;
+@media (min-width: 426px) and (max-width: 1023px){
+    body>div:nth-child(2) {
+        display: block;
     }
-    #img{
-        height: 20%;
+    #img, #details {
+        width: 100%;
     }
 }
+
 /* SMALL LAPTOP */
-@media (min-width: 769px) and (max-width: 1024px){
-    #category{
+@media (min-width: 769px) and (max-width: 1024px) {
+    #category {
         font-size: 13px;
-    }
-    #mainbox{
-        width: 40%;
-    }
-    #img{
-        height: 20%;
     }
 }

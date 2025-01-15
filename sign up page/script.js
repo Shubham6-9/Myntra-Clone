@@ -51,7 +51,8 @@ function insertData() {
         body: JSON.stringify({
             uname: `${uname.value}`,
             mail: `${mail.value}`,
-            pass: `${pass.value}`
+            pass: `${pass.value}`,
+            cart: []
         })
     })
         .then(res => {

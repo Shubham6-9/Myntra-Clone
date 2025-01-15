@@ -4,6 +4,7 @@ fetch("http://localhost:3000/products")
         // view(res);
         document.getElementById("products").innerHTML = view(res)
     })
+    .catch((err) => alert(err))
 
 function view(res) {
     return res.map((e) => {
