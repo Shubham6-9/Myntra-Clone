@@ -1,7 +1,8 @@
+let uid = localStorage.getItem("User")
 fetch("http://localhost:3000/products")
     .then((res) => res.json())
     .then((res) => {
-        // view(res);
+        cartDisplay();
         document.getElementById("products").innerHTML = view(res)
     })
     .catch((err) => alert(err))
@@ -22,4 +23,14 @@ function view(res) {
                     </a>
                 </div>`
     }).join("");
+}
+
+function cartDisplay() {
+    fetch(`http://localhost:3000/users/${uid}`)
+        .then((res) => res.json())
+        .then((res) => {
+            let a = 0
+            res.cart.forEach((e) => a++)
+            document.getElementById("cart-count").innerHTML = `<p>${a}</p>`
+        })
 }

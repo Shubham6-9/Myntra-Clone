@@ -90,11 +90,28 @@ a {
     height: 50px;
     text-align: center;
 }
-#offcanvas{
+
+#cart-count {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(218, 217, 217);
+    color: red;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 50%;
+    position: relative;
+    top: -24px;
+    left: 14px;
+}
+
+/* main body */
+#offcanvas {
     position: fixed;
     z-index: 20;
 }
-#filters , .filters{
+
+#filters,
+.filters {
     margin-top: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 20%;
@@ -102,9 +119,11 @@ a {
     height: 800px;
     overflow: scroll;
 }
-.filters::-webkit-scrollbar{
+
+.filters::-webkit-scrollbar {
     display: none;
 }
+
 span {
     font-size: 13px;
     color: rgb(163, 162, 162);
@@ -145,24 +164,20 @@ span {
 .color6 {
     background-color: blue;
 }
-#products{
+
+#products {
     width: 80%;
     margin-right: -4px;
     height: 1000px;
     overflow: scroll;
 }
-#products::-webkit-scrollbar{
+
+#products::-webkit-scrollbar {
     display: none;
 }
-#pro-img{
+
+#pro-img {
     height: 380px;
     width: 100%;
     padding: 15px;
 }
-/* body>div:nth-child(2){
-    height: 1200px;
-    overflow: scroll;
-} */
-/* body>div:nth-child(2)::-webkit-scrollbar{
-    display: none;
-} */

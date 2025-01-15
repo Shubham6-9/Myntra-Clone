@@ -79,6 +79,12 @@
                                 <p>Bag</p>
                             </a>
                         </div>
+                        <div>
+                            <a href="">
+                                <i class="fa-solid fa-cart-shopping-fast"></i>
+                                <p id="cart-count"></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,103 +104,175 @@
                 <div class="offcanvas-body">
                     <div id="filters">
                         <h4>Filters</h4>
-                        <input type="radio" name="filters"> <p class="fw-semibold d-inline">Men</p> <br>
-                        <input type="radio" name="filters"> <p class="fw-semibold d-inline">Women</p> <br>
-                        <input type="radio" name="filters"> <p class="fw-semibold d-inline">Boys</p> <br>
-                        <input type="radio" name="filters"> <p class="fw-semibold d-inline">Girls</p> <br>
+                        <input type="radio" name="filters">
+                        <p class="fw-semibold d-inline">Men</p> <br>
+                        <input type="radio" name="filters">
+                        <p class="fw-semibold d-inline">Women</p> <br>
+                        <input type="radio" name="filters">
+                        <p class="fw-semibold d-inline">Boys</p> <br>
+                        <input type="radio" name="filters">
+                        <p class="fw-semibold d-inline">Girls</p> <br>
                         <hr>
                         <h5>Categories</h5>
-                        <input type="checkbox" name="categories"> <p class="d-inline">TShirts <span>(1652)</span></p> <br>
-                        <input type="checkbox" name="categories"> <p class="d-inline">Casual Shoes <span>(819)</span></p> <br>
-                        <input type="checkbox" name="categories"> <p class="d-inline">Sport Shoes <span>(620)</span></p> <br>
-                        <input type="checkbox" name="categories"> <p class="d-inline">Shorts <span>(435)</span></p> <br>
-                        <input type="checkbox" name="categories"> <p class="d-inline">Track Pants <span>(415)</span></p> <br>
-                        <input type="checkbox" name="categories"> <p class="d-inline">Sweaters <span>(258)</span></p> <br>
+                        <input type="checkbox" name="categories">
+                        <p class="d-inline">TShirts <span>(1652)</span></p> <br>
+                        <input type="checkbox" name="categories">
+                        <p class="d-inline">Casual Shoes <span>(819)</span></p> <br>
+                        <input type="checkbox" name="categories">
+                        <p class="d-inline">Sport Shoes <span>(620)</span></p> <br>
+                        <input type="checkbox" name="categories">
+                        <p class="d-inline">Shorts <span>(435)</span></p> <br>
+                        <input type="checkbox" name="categories">
+                        <p class="d-inline">Track Pants <span>(415)</span></p> <br>
+                        <input type="checkbox" name="categories">
+                        <p class="d-inline">Sweaters <span>(258)</span></p> <br>
                         <hr>
                         <h5>Brands</h5>
-                        <input type="checkbox" name="brands"> <p class="d-inline">ArtzFolio <span>(79688)</span></p> <br>
-                        <input type="checkbox" name="brands"> <p class="d-inline">Kuber Industries <span>(28494)</span></p> <br>
-                        <input type="checkbox" name="brands"> <p class="d-inline">Roadster <span>(22136)</span></p> <br>
-                        <input type="checkbox" name="brands"> <p class="d-inline">Afast <span>(16596)</span></p> <br>
-                        <input type="checkbox" name="brands"> <p class="d-inline">CVANU <span>(11757)</span></p> <br>
-                        <input type="checkbox" name="brands"> <p class="d-inline">1ST TIME <span>(10565)</span></p> <br>
-                        <input type="checkbox" name="brands"> <p class="d-inline">HIGHLANDER <span>(10277)</span></p>
+                        <input type="checkbox" name="brands">
+                        <p class="d-inline">ArtzFolio <span>(79688)</span></p> <br>
+                        <input type="checkbox" name="brands">
+                        <p class="d-inline">Kuber Industries <span>(28494)</span></p> <br>
+                        <input type="checkbox" name="brands">
+                        <p class="d-inline">Roadster <span>(22136)</span></p> <br>
+                        <input type="checkbox" name="brands">
+                        <p class="d-inline">Afast <span>(16596)</span></p> <br>
+                        <input type="checkbox" name="brands">
+                        <p class="d-inline">CVANU <span>(11757)</span></p> <br>
+                        <input type="checkbox" name="brands">
+                        <p class="d-inline">1ST TIME <span>(10565)</span></p> <br>
+                        <input type="checkbox" name="brands">
+                        <p class="d-inline">HIGHLANDER <span>(10277)</span></p>
                         <hr>
                         <h5>Price</h5>
                         <input type="range" class="form-range d-inline">
                         <p>200 - 10,000+</p>
                         <hr>
                         <h5>Colors</h5>
-                        <input type="checkbox" name="colors"> <div class="color1 d-inline-block"></div> <p class="d-inline">Black</p> <br>
-                        <input type="checkbox" name="colors"> <div class="color2 d-inline-block"></div> <p class="d-inline">Navy Blue</p> <br>
-                        <input type="checkbox" name="colors"> <div class="color3 d-inline-block"></div> <p class="d-inline">Yellow</p> <br>
-                        <input type="checkbox" name="colors"> <div class="color4 d-inline-block"></div> <p class="d-inline">White</p> <br>
-                        <input type="checkbox" name="colors"> <div class="color5 d-inline-block"></div> <p class="d-inline">Green</p> <br>
-                        <input type="checkbox" name="colors"> <div class="color6 d-inline-block"></div> <p class="d-inline">Blue</p> <br>
+                        <input type="checkbox" name="colors">
+                        <div class="color1 d-inline-block"></div>
+                        <p class="d-inline">Black</p> <br>
+                        <input type="checkbox" name="colors">
+                        <div class="color2 d-inline-block"></div>
+                        <p class="d-inline">Navy Blue</p> <br>
+                        <input type="checkbox" name="colors">
+                        <div class="color3 d-inline-block"></div>
+                        <p class="d-inline">Yellow</p> <br>
+                        <input type="checkbox" name="colors">
+                        <div class="color4 d-inline-block"></div>
+                        <p class="d-inline">White</p> <br>
+                        <input type="checkbox" name="colors">
+                        <div class="color5 d-inline-block"></div>
+                        <p class="d-inline">Green</p> <br>
+                        <input type="checkbox" name="colors">
+                        <div class="color6 d-inline-block"></div>
+                        <p class="d-inline">Blue</p> <br>
                         <hr>
                         <h5>Discount Range</h5>
-                        <input type="radio" name="discount"> <p class="d-inline">10% and Above</p> <br>
-                        <input type="radio" name="discount"> <p class="d-inline">20% and Above</p> <br>
-                        <input type="radio" name="discount"> <p class="d-inline">30% and Above</p> <br>
-                        <input type="radio" name="discount"> <p class="d-inline">40% and Above</p> <br>
-                        <input type="radio" name="discount"> <p class="d-inline">50% and Above</p> <br>
-                        <input type="radio" name="discount"> <p class="d-inline">60% and Above</p> <br>
-                        <input type="radio" name="discount"> <p class="d-inline">70% and Above</p> <br>
+                        <input type="radio" name="discount">
+                        <p class="d-inline">10% and Above</p> <br>
+                        <input type="radio" name="discount">
+                        <p class="d-inline">20% and Above</p> <br>
+                        <input type="radio" name="discount">
+                        <p class="d-inline">30% and Above</p> <br>
+                        <input type="radio" name="discount">
+                        <p class="d-inline">40% and Above</p> <br>
+                        <input type="radio" name="discount">
+                        <p class="d-inline">50% and Above</p> <br>
+                        <input type="radio" name="discount">
+                        <p class="d-inline">60% and Above</p> <br>
+                        <input type="radio" name="discount">
+                        <p class="d-inline">70% and Above</p> <br>
                     </div>
                 </div>
             </div>
         </div>
         <div class="filters">
             <h4>Filters</h4>
-            <input type="radio" name="filters"> <p class="fw-semibold d-inline">Men</p> <br>
-            <input type="radio" name="filters"> <p class="fw-semibold d-inline">Women</p> <br>
-            <input type="radio" name="filters"> <p class="fw-semibold d-inline">Boys</p> <br>
-            <input type="radio" name="filters"> <p class="fw-semibold d-inline">Girls</p> <br>
+            <input type="radio" name="filters">
+            <p class="fw-semibold d-inline">Men</p> <br>
+            <input type="radio" name="filters">
+            <p class="fw-semibold d-inline">Women</p> <br>
+            <input type="radio" name="filters">
+            <p class="fw-semibold d-inline">Boys</p> <br>
+            <input type="radio" name="filters">
+            <p class="fw-semibold d-inline">Girls</p> <br>
             <hr>
             <h5>Categories</h5>
-            <input type="checkbox" name="categories"> <p class="d-inline">TShirts <span>(1652)</span></p> <br>
-            <input type="checkbox" name="categories"> <p class="d-inline">Casual Shoes <span>(819)</span></p> <br>
-            <input type="checkbox" name="categories"> <p class="d-inline">Sport Shoes <span>(620)</span></p> <br>
-            <input type="checkbox" name="categories"> <p class="d-inline">Shorts <span>(435)</span></p> <br>
-            <input type="checkbox" name="categories"> <p class="d-inline">Track Pants <span>(415)</span></p> <br>
-            <input type="checkbox" name="categories"> <p class="d-inline">Sweaters <span>(258)</span></p> <br>
+            <input type="checkbox" name="categories">
+            <p class="d-inline">TShirts <span>(1652)</span></p> <br>
+            <input type="checkbox" name="categories">
+            <p class="d-inline">Casual Shoes <span>(819)</span></p> <br>
+            <input type="checkbox" name="categories">
+            <p class="d-inline">Sport Shoes <span>(620)</span></p> <br>
+            <input type="checkbox" name="categories">
+            <p class="d-inline">Shorts <span>(435)</span></p> <br>
+            <input type="checkbox" name="categories">
+            <p class="d-inline">Track Pants <span>(415)</span></p> <br>
+            <input type="checkbox" name="categories">
+            <p class="d-inline">Sweaters <span>(258)</span></p> <br>
             <hr>
             <h5>Brands</h5>
-            <input type="checkbox" name="brands"> <p class="d-inline">ArtzFolio <span>(79688)</span></p> <br>
-            <input type="checkbox" name="brands"> <p class="d-inline">Kuber Industries <span>(28494)</span></p> <br>
-            <input type="checkbox" name="brands"> <p class="d-inline">Roadster <span>(22136)</span></p> <br>
-            <input type="checkbox" name="brands"> <p class="d-inline">Afast <span>(16596)</span></p> <br>
-            <input type="checkbox" name="brands"> <p class="d-inline">CVANU <span>(11757)</span></p> <br>
-            <input type="checkbox" name="brands"> <p class="d-inline">1ST TIME <span>(10565)</span></p> <br>
-            <input type="checkbox" name="brands"> <p class="d-inline">HIGHLANDER <span>(10277)</span></p>
+            <input type="checkbox" name="brands">
+            <p class="d-inline">ArtzFolio <span>(79688)</span></p> <br>
+            <input type="checkbox" name="brands">
+            <p class="d-inline">Kuber Industries <span>(28494)</span></p> <br>
+            <input type="checkbox" name="brands">
+            <p class="d-inline">Roadster <span>(22136)</span></p> <br>
+            <input type="checkbox" name="brands">
+            <p class="d-inline">Afast <span>(16596)</span></p> <br>
+            <input type="checkbox" name="brands">
+            <p class="d-inline">CVANU <span>(11757)</span></p> <br>
+            <input type="checkbox" name="brands">
+            <p class="d-inline">1ST TIME <span>(10565)</span></p> <br>
+            <input type="checkbox" name="brands">
+            <p class="d-inline">HIGHLANDER <span>(10277)</span></p>
             <hr>
             <h5>Price</h5>
             <input type="range" class="form-range d-inline">
             <p>200 - 10,000+</p>
             <hr>
             <h5>Colors</h5>
-            <input type="checkbox" name="colors"> <div class="color1 d-inline-block"></div> <p class="d-inline">Black</p> <br>
-            <input type="checkbox" name="colors"> <div class="color2 d-inline-block"></div> <p class="d-inline">Navy Blue</p> <br>
-            <input type="checkbox" name="colors"> <div class="color3 d-inline-block"></div> <p class="d-inline">Yellow</p> <br>
-            <input type="checkbox" name="colors"> <div class="color4 d-inline-block"></div> <p class="d-inline">White</p> <br>
-            <input type="checkbox" name="colors"> <div class="color5 d-inline-block"></div> <p class="d-inline">Green</p> <br>
-            <input type="checkbox" name="colors"> <div class="color6 d-inline-block"></div> <p class="d-inline">Blue</p> <br>
+            <input type="checkbox" name="colors">
+            <div class="color1 d-inline-block"></div>
+            <p class="d-inline">Black</p> <br>
+            <input type="checkbox" name="colors">
+            <div class="color2 d-inline-block"></div>
+            <p class="d-inline">Navy Blue</p> <br>
+            <input type="checkbox" name="colors">
+            <div class="color3 d-inline-block"></div>
+            <p class="d-inline">Yellow</p> <br>
+            <input type="checkbox" name="colors">
+            <div class="color4 d-inline-block"></div>
+            <p class="d-inline">White</p> <br>
+            <input type="checkbox" name="colors">
+            <div class="color5 d-inline-block"></div>
+            <p class="d-inline">Green</p> <br>
+            <input type="checkbox" name="colors">
+            <div class="color6 d-inline-block"></div>
+            <p class="d-inline">Blue</p> <br>
             <hr>
             <h5>Discount Range</h5>
-            <input type="radio" name="discount"> <p class="d-inline">10% and Above</p> <br>
-            <input type="radio" name="discount"> <p class="d-inline">20% and Above</p> <br>
-            <input type="radio" name="discount"> <p class="d-inline">30% and Above</p> <br>
-            <input type="radio" name="discount"> <p class="d-inline">40% and Above</p> <br>
-            <input type="radio" name="discount"> <p class="d-inline">50% and Above</p> <br>
-            <input type="radio" name="discount"> <p class="d-inline">60% and Above</p> <br>
-            <input type="radio" name="discount"> <p class="d-inline">70% and Above</p> <br>
+            <input type="radio" name="discount">
+            <p class="d-inline">10% and Above</p> <br>
+            <input type="radio" name="discount">
+            <p class="d-inline">20% and Above</p> <br>
+            <input type="radio" name="discount">
+            <p class="d-inline">30% and Above</p> <br>
+            <input type="radio" name="discount">
+            <p class="d-inline">40% and Above</p> <br>
+            <input type="radio" name="discount">
+            <p class="d-inline">50% and Above</p> <br>
+            <input type="radio" name="discount">
+            <p class="d-inline">60% and Above</p> <br>
+            <input type="radio" name="discount">
+            <p class="d-inline">70% and Above</p> <br>
         </div>
         <div id="products" class="row">
-            
+
         </div>
     </div>
     <footer class="container">
-        
+
     </footer>
 </body>
 <!-- BOOTSTRAP -->

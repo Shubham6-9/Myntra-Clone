@@ -1,11 +1,13 @@
 let id = new URLSearchParams(window.location.search).get("id")
+let uid = localStorage.getItem("User")
+cartDisplay();
 let currentProduct;
 fetch(`http://localhost:3000/products?id=${id}`)
-    .then((res) => res.json())
-    .then((res) => {
-        currentProduct = res[0]
-        view();
-    })
+.then((res) => res.json())
+.then((res) => {
+    currentProduct = res[0]
+    view();
+})
 
 function view() {
     document.getElementById("img").style.backgroundImage = `url(${currentProduct.image})`;
@@ -38,7 +40,6 @@ function star(rate) {
     }
     return a.join("")
 }
-let uid = localStorage.getItem("User")
 document.getElementById("cart").addEventListener('click', () => {
     fetch(`http://localhost:3000/users/${uid}`)
         .then((res) => res.json())
@@ -57,7 +58,7 @@ function cart(res) {
         })
             .then((res) => res.json())
             .then((res) => {
-
+                cartDisplay()
             })
             .catch((err) => alert(err))
     } else {
@@ -74,7 +75,7 @@ function cart(res) {
             })
                 .then((res) => res.json())
                 .then((res) => {
-
+                    cartDisplay()
                 })
                 .catch((err) => {
                     alert(err)
@@ -98,4 +99,14 @@ function cart(res) {
                 .catch((err) => alert(err))
         }
     }
+}
+
+function cartDisplay() {
+    fetch(`http://localhost:3000/users/${uid}`)
+        .then((res) => res.json())
+        .then((res) => {
+            let a = 0
+            res.cart.forEach((e) => a++)
+            document.getElementById("cart-count").innerHTML = `<p>${a}</p>`
+        })
 }
