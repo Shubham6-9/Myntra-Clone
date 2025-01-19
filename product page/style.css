@@ -91,6 +91,10 @@ a {
     text-align: center;
 }
 
+#actions>div:last-child {
+    font-size: 20px;
+}
+
 #cart-count {
     height: 15px;
     width: 15px;
@@ -100,7 +104,7 @@ a {
     font-weight: 600;
     border-radius: 50%;
     position: relative;
-    top: -24px;
+    top: -30px;
     left: 14px;
 }
 

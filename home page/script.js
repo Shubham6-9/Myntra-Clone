@@ -25,11 +25,14 @@ if (valid == 'true') {
     })
 }
 
-const id = (new URLSearchParams(window.location.search)).get("id")
-fetch(`http://localhost:3000/users?id=${id}`)
+fetch(`http://localhost:3000/users`)
     .then((res) => res.json())
     .then((res) => {
-        document.getElementById("username").innerText = `${res[0].uname}`
+        res.forEach((e) => {
+            if (e.id == localStorage.getItem("User")) {
+                document.getElementById("username").innerText = `${res[0].uname}`
+            }
+        })
     })
 
 document.getElementById("logout").addEventListener('click', () => {

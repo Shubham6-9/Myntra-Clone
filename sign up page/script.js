@@ -52,7 +52,8 @@ function insertData() {
             uname: `${uname.value}`,
             mail: `${mail.value}`,
             pass: `${pass.value}`,
-            cart: []
+            cart: [],
+            orders: []
         })
     })
         .then(res => {

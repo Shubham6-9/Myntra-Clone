@@ -84,7 +84,6 @@ function cart(res) {
             let newCart = res.cart
             let index = newCart.findIndex((e) => e.id === currentProduct.id)
             newCart[index].quantity++
-            console.log(newCart)
             fetch(`http://localhost:3000/users/${uid}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },

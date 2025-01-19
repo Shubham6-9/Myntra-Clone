@@ -89,9 +89,11 @@ a {
     height: 50px;
     text-align: center;
 }
-#actions>div:last-child{
+
+#actions>div:last-child {
     font-size: 20px;
 }
+
 #cart-count {
     height: 15px;
     width: 15px;
@@ -106,75 +108,90 @@ a {
 }
 
 /* main page */
-body>div:nth-child(2) {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+#dis-cart-prod-box{
+    border: 1px solid lightgrey;
+}
+.cart-prod {
+    box-shadow: lightgrey 2px 2px 15px;
 }
 
-#img {
-    height: 450px;
-    width: 40%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: 0.5s ease;
+.cart-prod>div>p:nth-child(2) {
+    font-size: 12px;
 }
 
-#img:hover {
-    height: 470px;
-    width: 42%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.cart-prod>div:last-child>div p {
+    margin: 0px;
 }
 
-#details {
-    height: 600px;
-    width: 50%;
-    padding: 15px;
-}
-
-#description {
-    color: grey;
-    width: 60%;
-}
-
-#size {
-    display: none;
-}
-
-#size>.size {
-    height: 50px;
-    width: 50px;
-    font-weight: 600;
-    border: 1px solid;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.5s ease;
-}
-
-#size>.size:hover {
-    border: 1px solid var(--pink);
-    color: var(--pink)
-}
-
-#price {
-    margin-top: 15px;
+.add,
+.sub {
+    height: 35px;
+    width: 28px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
     font-size: 20px;
-}
-
-#cart {
-    height: 40px;
-    width: 150px;
-    margin-top: 20px;
-    font-size: 18px;
-    border: 2px solid;
+    font-weight: 600;
     background-color: white;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
-#cart:hover {
-    border: 2px solid green;
-    color: green;
+.add:hover {
+    background-color: green;
+    color: white
+}
+
+.sub:hover {
+    background-color: red;
+    color: white;
+}
+
+/* checkout */
+#checkout {
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+#checkout>button {
+    background-color: none;
+    border: 2px solid var(--pink);
+    border-radius: 5px;
+    color: var(--pink);
+    transition: 0.3s ease;
+}
+
+#checkout>button:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+#orderNo{
+    color: red;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: absolute;
+    left: 150px;
+    top: 110px;
+}
+
+.order-btn{
+    font-weight: 600;
+    border: 1px solid lightblue;
+    background-color: whitesmoke;
+    color: var(--pink);
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.order-btn:hover{
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid white;
 }

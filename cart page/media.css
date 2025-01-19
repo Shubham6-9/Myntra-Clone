@@ -1,0 +1,39 @@
+/* for NAVBAR */
+/* SMALL MOBILE */
+@media(max-width: 321px) {
+    #category {
+        font-size: 10px;
+        justify-content: space-between;
+    }
+
+    #logo {
+        height: 45px;
+    }
+    #checkout{
+        left: 0px;
+        width: 100%;
+    }
+}
+
+/* MED AND LARGE MOBILE */
+@media(min-width: 321px) and (max-width: 426px) {
+    #category {
+        font-size: 12px;
+        justify-content: space-between;
+    }
+
+    #logo {
+        height: 45px;
+    }
+}
+
+/* TABLET */
+@media (min-width: 426px) and (max-width: 1023px){
+}
+
+/* SMALL LAPTOP */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #category {
+        font-size: 13px;
+    }
+}
